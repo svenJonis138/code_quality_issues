@@ -25,8 +25,9 @@ When you create a PR, PyLint will run on your code and make some style checks. I
 * There are no classes in this example, but you should use UppercaseCamelCase for class names 
 * Remove redundant comments
 * Remove unnecessary print statements 
-* Avoid very long lines, revise into two or more shorter lines 
-* Variable names should be specific and descriptive. `data` is always a bad variable name - everything is data
+* Remove unused code, variables and imports
+* Avoid very long lines, revise into two or more shorter lines. 
+* Variable names should be specific and descriptive. `data` is almost always a bad variable name - everything is data
 * Avoid reasigning variables to store a different type of data
 * Repetitive code can often be replaced with a function 
 * Complex functions should be broken into simpler functions
