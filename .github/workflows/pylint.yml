@@ -19,5 +19,4 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint --disable=trailing-whitespace --generate-rcfile
-        pylint `ls -R|grep .py$|xargs`
+        pylint --disable=trailing-whitespace `ls -R|grep .py$|xargs`
