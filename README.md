@@ -5,8 +5,8 @@ This program converts between US state names, and abbreviations. For example, co
 ## Instructions
 
 1. **Fork** this repository
-2. **Clone** it to your computer 
-3. Make a **branch** with an appropriate name 
+2. Clone it to your computer 
+3. Make a branch with an appropriate name 
 4. Fix the code quality issues
 5. Push your branch to your fork
 6. Make a Pull Request to the original repo
