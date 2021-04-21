@@ -3,7 +3,8 @@ import json  # import json for json processing
 
 
 def main():
-    """ Create a dictionary of states -> abbreviations, and a dictionary of abbreviations -> states """
+    """ Create a dictionary of states -> abbreviations,
+    and a dictionary of abbreviations -> states """
     with open('data.json', 'r') as file:
         original_data = file.read()
         read_data = json.loads(original_data)
