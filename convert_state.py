@@ -16,7 +16,7 @@ def main():
         state_abbr2[state_value] = state_key
 
     while True:
-        """UI menu"""
+        """ UI menu """
         print('1. Convert state to abbreviation')
         print('2. Convert abbreviation to state')
         print('3. quit')
@@ -33,7 +33,7 @@ def main():
 
 
 def convert_state_to_abbreviation(dictionary):
-    """converts state name to abbreviation"""
+    """ converts state name to abbreviation """
     user_input = input('Enter state name: ').capitalize()
     result = dictionary.get(user_input)
     if result is None:
@@ -43,7 +43,7 @@ def convert_state_to_abbreviation(dictionary):
 
 
 def convert_abbreviation_to_state(dictionary):
-    """converts abbreviation to state name"""
+    """ converts abbreviation to state name """
     user_input = input('Enter abbreviation name: ').upper()
     result = dictionary.get(user_input)
     if result is None:
