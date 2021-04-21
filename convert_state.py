@@ -12,7 +12,7 @@ def main():
     state_abbr2 = {}  # dictionary of state name keys and state abbreviation values
 
     for state_key, state_value in state_abbr.items():
-        state_abbr2[state_value] = statekey
+        state_abbr2[state_value] = state_key
 
     while True:
         """UI menu"""
@@ -22,9 +22,9 @@ def main():
         choice = input('Enter choice: ')
 
         if choice == '1':
-            convertStateToAbbreviation(stateAbbr2)
+            convert_state_to_abbreviation(state_abbr2)
         elif choice == '2':
-            convert_abbreviation_to_state(stateAbbr)
+            convert_abbreviation_to_state(state_abbr)
         elif choice == '3':
             break
         else:
