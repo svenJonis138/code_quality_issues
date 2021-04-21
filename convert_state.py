@@ -16,7 +16,6 @@ def main():
         state_abbr2[state_value] = state_key
 
     while True:
-        """ UI menu """
         print('1. Convert state to abbreviation')
         print('2. Convert abbreviation to state')
         print('3. quit')
