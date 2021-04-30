@@ -9,11 +9,11 @@ def main():
         original_data = file.read()
         read_data = json.loads(original_data)
 
-    state_abbr = read_data  # dictionary of state abbreviations keys and state name values
-    state_abbr2 = {}  # dictionary of state name keys and state abbreviation values
+    abbreviations_to_state_name = read_data  # dictionary of state abbreviations keys and state name values
+    state_name_to_abbreviations = {}  # dictionary of state name keys and state abbreviation values
 
-    for state_key, state_value in state_abbr.items():
-        state_abbr2[state_value] = state_key
+    for state_key, state_value in abbreviations_to_state_name.items():
+        state_name_to_abbreviations[state_value] = state_key
 
     while True:
         print('1. Convert state to abbreviation')
@@ -22,9 +22,9 @@ def main():
         choice = input('Enter choice: ')
 
         if choice == '1':
-            convert_state_to_abbreviation(state_abbr2)
+            convert_state_to_abbreviation(state_name_to_abbreviations)
         elif choice == '2':
-            convert_abbreviation_to_state(state_abbr)
+            convert_abbreviation_to_state(abbreviations_to_state_name)
         elif choice == '3':
             break
         else:
@@ -38,7 +38,7 @@ def convert_state_to_abbreviation(dictionary):
     if result is None:
         print(' state not found')
     else:
-        print('The abbreviation for ' + user_input + ' is ' + result)
+        print(f'The abbreviation for {user_input} is {result}')
 
 
 def convert_abbreviation_to_state(dictionary):
@@ -48,7 +48,7 @@ def convert_abbreviation_to_state(dictionary):
     if result is None:
         print(' abbreviation not found')
     else:
-        print('the state with the abbreviation   ' + user_input + ' is ' + result)
+        print(f'the state with the abbreviation {user_input} is {result}')
 
 
 if __name__ == '__main__':
